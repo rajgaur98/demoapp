@@ -3,7 +3,7 @@
  * @date 6th January, 2020
  */
 import h from './helpers.js';
-import io from 'socket.io-client';
+
 window.addEventListener( 'load', () => {
     const room = h.getQString( location.href, 'room' );
     const username = sessionStorage.getItem( 'username' );
