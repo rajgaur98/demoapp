@@ -15,5 +15,6 @@ app.get( '/', ( req, res ) => {
 
 
 io.of( '/stream' ).on( 'connection', stream );
-
-server.listen( 3000 );
+// start the server listening for requests
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
